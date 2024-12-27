@@ -58,17 +58,13 @@ const Navbar = () => {
               }   font-medium cursor-pointer border-[1px]`}
               onClick={() => setActive(Link.title)}
             >
-              <span className="flex items-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
+              
                 {" "}
-                <svg
-                  class="fill-current w-4 h-4 mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
+                
                   <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-                </svg>{" "}
+                
                 Download CV
-              </span>
+              
 
             </button>
           </a>
