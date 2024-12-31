@@ -36,13 +36,14 @@ const Contact = () => {
         'service_0vfcbqo',
         'template_dwrxv6g',
         {
-          name: form.name,
-          to_name: "Aayush Gupta",
-          email: form.email,
+          from_name: form.name,
+          to_name: "Aayush",
+          from_email: form.email,
           to_email: "aayushbits.gupta@gmail.com",
           message: form.message,
         },
         'Qi185bmqr5DiA7q7P',
+
       )
       .then(
         () => {
@@ -65,7 +66,6 @@ const Contact = () => {
   };
 
   return (
-
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
@@ -74,7 +74,7 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h2 className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}>Contact.</h2>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
           ref={formRef}
@@ -88,7 +88,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -99,7 +99,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email address?"
+              placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -110,7 +110,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="What's your message?"
+              placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
