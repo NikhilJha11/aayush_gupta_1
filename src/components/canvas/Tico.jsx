@@ -63,7 +63,7 @@ const TicofabCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          autoRotate
+          
           autoRotateSpeed={2}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
